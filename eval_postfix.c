@@ -27,11 +27,8 @@ float pop(struct stack *p)
 		printf("Stack underflow");
 		printf("The popped value is: -1 \n");
 	}//End of if condition
-	else{
-		
+	else
 		return(p->a[p->top--]);
-		
-	}//end of else condition
 }//End of pop function  
 
 int isoperand(char x){
