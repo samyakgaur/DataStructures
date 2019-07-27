@@ -1,2 +1,2 @@
 # DataStructures
-This is the code for my data structures sessions
+This is the code for my data structures sessions.
