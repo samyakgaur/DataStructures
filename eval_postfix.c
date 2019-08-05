@@ -2,7 +2,7 @@
 Samyak Gaur(8604)
 Batch B
 
-A program to evaluate a postfix expression 
+A program to evaluate a postfix expression. 
 */
 #include<stdio.h>
 #include<string.h>
