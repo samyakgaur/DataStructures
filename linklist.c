@@ -52,15 +52,45 @@ void addLast(int x){
 	else{
 		p=start;
 		while(p->next!=NULL)
-			p->next=newnode;
+			p=p->next;
+		p->next=newnode;
 	}//End of else 
 }//End of addlast function
+void insert_before(int x,int val){
+        printf("called\n");
+		struct node *p,*previous,*ptr;
+		p=getnode();
+		if(start==NULL){
+			printf("List is empty");
+			start=p;
+		}//End of if statements
+		else{
+				previous=start;
+				ptr=start;
+				p->info=x;
+				p->next=NULL;
+				//ptr=start;
+				while(ptr->info!=val){
+				        printf("while\n");
+						previous=ptr;
+						ptr=ptr->next;
+				}//End of while loop
+				if (ptr==NULL)
+				 printf("not found\n");
+				else{ 
+				   printf("else\n");
+					previous->next=p;
+					ptr=p->next;
+					printf("node added\n");	
+			
+			
+				
+			}//End of inner else
+		}//End of else statement
+}//end of insert_before function
 void insert_after(int x){
-		
-}//end of insert_after function
-void insert_before(int x){
 	
-}//End of insert_before function
+}//End of insert_after function
 void delete(int val){
 	struct node*ptr,*previous;
 	if(start==NULL){
@@ -93,7 +123,7 @@ void delete(int val){
 
 int main(){
 	struct node *p,*previous,*ptr;
-	int choice,x;
+	int choice,x,val;
 	p=getnode();
 	while(1){
 		printf("\n Enter your choice: \n 1.Insert first \n 2.display \n 3.Add element at last \n 4.Insert a node after \n 5.Insert a node before \n 6. delete \n 7.Exit\n");
@@ -119,9 +149,11 @@ int main(){
 					insert_after(x);
 					break;
 			case 5: 
-					printf("Enter the value: ");
+					printf("Enter the node to after the value before : ");
 					scanf("%d",&x);
-					insert_before(x);
+					printf("Enter the value: ");
+					scanf("%d",&val);
+					insert_before(x,val);
 					break;
 			case 6: 
 					printf("Enter the value to delete: ");
