@@ -90,3 +90,15 @@ int main(){
 	printf("UnBalanced expression\n");
 	return(0);
 	}//End of main
+/*
+
+Output  for the following code :
+(base) Samyaks-Air:DataStructures samyakgaur$ ./a
+warning: this program uses gets(), which is unsafe.
+Enter an expression: {{(())}
+UnBalanced expression
+(base) Samyaks-Air:DataStructures samyakgaur$ ./a
+warning: this program uses gets(), which is unsafe.
+Enter an expression: {{[]()}}
+Balanced expression
+ */
