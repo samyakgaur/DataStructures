@@ -114,5 +114,12 @@ int main(){
 	}//End of main
 /*
 Output of the following code is:
-
+(base) Samyaks-Air:DataStructures samyakgaur$ ./a
+warning: this program uses gets(), which is unsafe.
+Enter an expression: 4+5
+45+
+(base) Samyaks-Air:DataStructures samyakgaur$ ./a
+warning: this program uses gets(), which is unsafe.
+Enter an expression: 8+4-9*2
+84+92*-
 */
