@@ -56,39 +56,38 @@ void addLast(int x){
 		p->next=newnode;
 	}//End of else 
 }//End of addlast function
-void insert_before(int x,int val){
-        printf("called\n");
-		struct node *p,*previous,*ptr;
-		p=getnode();
-		if(start==NULL){
-			printf("List is empty");
-			start=p;
-		}//End of if statements
-		else{
-				previous=start;
-				ptr=start;
-				p->info=x;
-				p->next=NULL;
-				//ptr=start;
-				while(ptr->info!=val){
-				        printf("while\n");
-						previous=ptr;
-						ptr=ptr->next;
-				}//End of while loop
-				if (ptr==NULL)
-				 printf("not found\n");
-				else{ 
-				   printf("else\n");
-					previous->next=p;
-					ptr=p->next;
-					printf("node added\n");	
-			
-			
-				
-			}//End of inner else
-		}//End of else statement
+void insert_bef(int x,int val){
+	struct node *p,*ptr,*preptr;
+	p=getnode();
+	p->info=x;
+	if(start==NULL)
+		start=p;
+	else{
+		ptr=start;
+		while(ptr->info!=val){
+			preptr=ptr;
+			ptr=ptr->next;
+		}
+		preptr->next=p;
+		p->next=ptr;
+	}
 }//end of insert_before function
-void insert_after(int x){
+void insert_after(int x,int val){
+	struct node *p,*ptr,*preptr;
+	p=getnode();
+	p->info=x;
+	if(start==NULL)
+		start=p;
+	else{
+		ptr=start;
+		preptr=ptr;
+		while(preptr->info!=val){
+				preptr=ptr;
+				ptr=ptr->next;
+		}//End of while loop
+		preptr->next=p;
+		p->next=ptr;
+	}
 	
 }//End of insert_after function
 void delete(int val){
@@ -124,7 +123,7 @@ void delete(int val){
 int main(){
 	struct node *p,*previous,*ptr;
 	int choice,x,val;
-	p=getnode();
+	p=(struct node *)malloc(sizeof(struct node));
 	while(1){
 		printf("\n Enter your choice: \n 1.Insert first \n 2.display \n 3.Add element at last \n 4.Insert a node after \n 5.Insert a node before \n 6. delete \n 7.Exit\n");
 		scanf("%d",&choice);
@@ -144,16 +143,18 @@ int main(){
 					addLast(x);
 					break;
 			case 4: 
+					printf("Enter the value after which node should be added: ");
+					scanf("%d",&val);
 					printf("Enter the value: ");
 					scanf("%d",&x);
-					insert_after(x);
+					insert_after(x,val);
 					break;
 			case 5: 
-					printf("Enter the node to after the value before : ");
-					scanf("%d",&x);
-					printf("Enter the value: ");
+					printf("Enter the value before which node should be added: ");
 					scanf("%d",&val);
-					insert_before(x,val);
+					printf("Enter the value: ");
+					scanf("%d",&x);
+					insert_bef(x,val);
 					break;
 			case 6: 
 					printf("Enter the value to delete: ");
