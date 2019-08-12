@@ -22,7 +22,7 @@ void enque(struct queue *p, int x){
 		p->rear++;
 		p->a[p->rear]=x;
 	}//End of if else condition
-	else if(p->rear==max-1){
+	else if(p->rear==max-1){	//&& p->front!=0 This condition is also necessary
 		p->rear=0;
 		p->a[p->rear]=x;
 	}//End of if else condition
