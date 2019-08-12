@@ -7,7 +7,7 @@ A program to convert an infix expression to postfix expression
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
-#define max 5
+#define max 500
 struct stack{
 	char a[max];
 	int top;
@@ -67,7 +67,7 @@ int priority(char x)
 
 int main(){
 	int i=0,n1,n2,j=0;
-	char exp[50],pos[20],x;
+	char exp[500],pos[200],x;
 	struct stack s;
 	s.top=-1;
 	printf("Enter an expression: ");
