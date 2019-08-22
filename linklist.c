@@ -204,6 +204,7 @@ void delete_after(int val){
 void count(){
 	struct node *ptr;
 	int count=1;
+	//As we didnt count the first node
 	if(start==NULL){
 			printf("The link list is empty ");
 			return;
@@ -325,4 +326,243 @@ int main(){
 
 /*
 The output for the following code is:
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+1
+Enter the value: 1
+
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+1
+Enter the value: 2
+
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+1
+Enter the value: 3
+
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+1
+Enter the value: 4
+
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+1
+Enter the value: 5
+
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes  Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+1
+Enter the value: 1
+
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+1
+Enter the value: 2
+
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+1
+Enter the value: 3
+
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+1
+Enter the value: 4
+
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+1
+Enter the value: 5
+
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+2
+The list is: 
+5 	4 	3 	2 	1 	
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+11
+We have sorted your link list! The sorted link list is: 
+1 	2 	3 	4 	5 	
+
+ 13.Exit
+2
+The list is: 
+5 	4 	3 	2 	1 	
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+11
+We have sorted your link list! The sorted link list is: 
+1 	2 	3 	4 	5 	
+
 */
