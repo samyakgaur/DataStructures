@@ -218,7 +218,32 @@ void count(){
 	printf("The number of nodes in the list is: %d",count);
 }//End of count function
 
- 
+void sort(){
+	struct node *ptr,*nptr;
+	int temp;
+	if(start==NULL)
+		printf("List is empty");
+	else if(start->next==NULL)
+		printf("The list has only one element");
+	else{
+		ptr=start;
+		nptr=ptr->next;
+		while(ptr->next!=NULL){
+			while(nptr!=NULL){
+				if(ptr->info>nptr->info){
+					temp=ptr->info;
+					ptr->info=nptr->info;
+					nptr->info=temp;
+				}//End of if condition
+			nptr=nptr->next;
+			}//End of inner while
+		ptr=ptr->next;
+		nptr=ptr->next;
+		}//End of outer while
+	}//End of else condition
+	printf("We have sorted your link list! The sorted link list is: \n");
+	display();
+}//End of sort function
 int main(){
 	struct node *p,*previous,*ptr;
 	int choice,x,val;
@@ -282,6 +307,8 @@ int main(){
 					break;  
 			case 11: 
 					//sort
+					sort();
+					break;
 			case 12: 
 					//Count number of nodes
 					count();
