@@ -1,7 +1,6 @@
 /*
 Samyak Gaur(8604)
 Batch B
-
 A program to implement link list 
 */
 #include<stdio.h>
@@ -81,7 +80,7 @@ void insert_after(int x,int val){
 	else{
 		ptr=start;
 		preptr=ptr;
-		while(preptr->info!=val){
+		while(ptr->info!=val){
 				preptr=ptr;
 				ptr=ptr->next;
 		}//End of while loop
@@ -173,5 +172,4 @@ int main(){
 
 /*
 The output for the following code is:
-
 */
