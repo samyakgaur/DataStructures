@@ -26,7 +26,7 @@ void insert_first(int x){
 		start=newnode;
 		else{
 			newnode->next=start;
-			start->prev==p;
+			start->prev=p;
 			start=newnode;
 		}//End of else	
 }//End of insert_first function
@@ -65,7 +65,7 @@ void insert_bef(int x,int val){
 		start=p;
 	else{
 		ptr=start;
-		while(ptr->info!=val && ptr!=NULL)
+		while( ptr!=NULL && ptr->info!=val)
 			ptr=ptr->next;
 		p->next=ptr;
 		p->prev=ptr->prev;

@@ -24,7 +24,7 @@ void insert_first(int x){
 	newnode->next=NULL;
 	if(start == NULL){
 		start=newnode;
-        start->next=newnode;
+        start->next=start;
     }
 	else{
 		p=start;
@@ -45,6 +45,7 @@ void display(){
 			printf("%d \t",p->info);
 			p=p->next;
 		}//End of while
+		printf("%d \t",p->info);
 	}//End of else 
 }//End of display function
 void addLast(int x){
@@ -71,7 +72,7 @@ void insert_bef(int x,int val){
 	else{
 		ptr=start;
 		preptr=start;
-		while(ptr->info!=val && ptr->next!=start){
+		while(ptr->info!=val && ptr->next!=start){ //This condition might cause a segmentation fault
 			preptr=ptr;
 			ptr=ptr->next;
 		}
