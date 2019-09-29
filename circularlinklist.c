@@ -155,7 +155,7 @@ void delete_last(){
 	}//if there's only one node in the list
 	else{
 		ptr=start;
-		while(ptr->next!=NULL){
+		while(ptr->next!=start){
 				preptr=ptr;
 				ptr=ptr->next;
 			}
@@ -282,4 +282,93 @@ int main(){
 }//End of main function
 
 /*
+(base) Samyaks-MacBook-Air:DataStructures samyakgaur$ gcc circularlinklist.c 
+(base) Samyaks-MacBook-Air:DataStructures samyakgaur$ ./a.out 
+
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11.Exit
+1
+Enter the value: 1
+
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11.Exit
+1
+Enter the value: 2
+
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11.Exit
+3
+Enter the value: 12
+
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11.Exit
+8
+Deleted node is: 12
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11.Exit
+2
+The list is: 
+2 	1 	
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11.Exit
 */

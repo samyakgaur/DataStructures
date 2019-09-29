@@ -331,4 +331,126 @@ int main(){
 /*
 The output for the following code is:
 
+(base) Samyaks-MacBook-Air:DataStructures samyakgaur$ gcc doublylinklist.c 
+(base) Samyaks-MacBook-Air:DataStructures samyakgaur$ ./a.out
+
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+1
+Enter the value: 1
+
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+3
+Enter the value: 2
+
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+4
+Enter the value after which node should be added: 1
+Enter the value: 12
+
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+2
+The list is: 
+1 	12 	2 	
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+9
+Enter the value before which node should be deleted: 2
+Deleted node is: 12
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+2
+The list is: 
+1 	2 	
+ Enter your choice: 
+ 1.Insert first 
+ 2.display 
+ 3.Add element at last 
+ 4.Insert a node after 
+ 5.Insert a node before 
+ 6. delete a specific node  
+ 7. delete the first node 
+ 8. delete the last node 
+ 9. delete before a specific node 
+ 10. delete after a specific node
+ 11. sort 
+ 12. count number of nodes 
+ 13.Exit
+
+
  */
