@@ -69,6 +69,7 @@ void postorder(struct node *t){
 }//End of postorder function
 
 void delete(struct node *p ,int val){
+    //p has the value of root passed by the calling function 
     int flag=0;
     struct node *t,*parent,*r;
     t=p;
@@ -140,7 +141,6 @@ int main(){
 					postorder(root);
 					break;
             case 5: 
-					//delete before specific
 					printf("Enter the value to be deleted: ");
 					scanf("%d",&val);
 					delete(root,val);
